@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //import React, { useState } from "react";
 import { placesInUtah, favNumberFn } from "../data";
 import DataProps from "./DataProps";
@@ -11,10 +11,11 @@ import PersonDescription from "./PersonDescription";
 // import PersonDescription from "./PersonDescription";
 
 const App = () => {
+  const [places, setPlaces] = useState(placesInUtah);
   return (
     <div>
       <h1>This is our new app, tom</h1>
-      <DataProps />
+      <DataProps data={places} />
       <br />
       <Greeting name="Emily" />
       <PersonDescription description="Teach" favNumber={favNumberFn} />
