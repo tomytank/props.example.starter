@@ -14,6 +14,6 @@ export const placesInUtah = [
   // second named import
   // oftentimes functions like these are kept in helper files (like helpers.js)
   export const favNumberFn = testStr => {
-    return `Fav Number is: ${Math.random() * 100}`;
+    return `Fav Number is: ${Math.round(Math.random() * 100)}`;
   };
   
